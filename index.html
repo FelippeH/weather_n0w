@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/sun.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Tempo Agora</title>
+</head>
+<body onload="carregar()">
+
+    <div class="box"> <!--large box-->
+            <div class="preload"></div>
+            <script src="script.js" defer></script>
+            <input class="input-city" placeholder="Encontre a sua cidade...">
+            <button class="click" onclick="handleClick()">
+                <img class="img-button" alt="" src="imagens/botao.png">
+            </button>
+
+            <!--mid box-->
+            <div class="medium-box">
+                <h2>Tempo agora em</h2>
+                <div class="thermometer">
+                    <img class="therm-img" alt="" src="imagens/therm.png">
+                    <p class="temp">aguarde...</p></div></div>
+            
+                <!--small box-->
+                <div class="mini-box">
+                    <img class="cloud-img" alt="" src="https://openweathermap.org/img/wn/04n.png">
+                    <p class="status">aguarde...</p>
+                </div>
+
+                <div class="humidity">
+                    <img class="humidity-img" alt="" src="imagens/humidity.png">
+                    <p class="umi">aguarde...</p></div>
+            </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <h3>&copy; Desenvolvido por Felipe Stefano</h3>
+    </footer>
+</body>
+</html>

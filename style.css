@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    color: #ffff;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagens/paisagem02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.801);
+    border-radius: 40px;
+    padding: 30px;
+    width: 570px;
+    height: 520px;
+    max-height: 520px;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    color: #999999;
+    background-color: #9c9c9c33;
+    border-radius: 36px;
+    width: 74%;
+    height: 13%;
+    padding-left: 28px;
+    font-size: 16pt;
+}
+
+.click {
+    width: 56px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    outline: none;
+    background-color: #9c9c9c33;
+    border-radius: 60px;
+    float: right;
+    cursor: pointer;
+}
+
+.img-button {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    filter: grayscale(1) brightness(0) invert(0.35);
+}
+
+.medium-box {
+    margin: 46px 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.medium-box h2 {
+    font-size: 24pt;
+}
+
+p {
+    font-size: 18pt;
+}
+
+.thermometer {
+    display: flex;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.therm-img {
+    filter: grayscale(1) brightness(0) invert(0.75);
+    width: 38px;
+    margin-right: 2.75vw;
+}
+
+.mini-box {
+    display: flex;
+    align-items: center;
+}
+
+.status {
+    padding: 0 30px;
+}
+
+.cloud-img {
+    filter: grayscale(0.25) brightness(1) invert(0.25);
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    margin-right: 0;
+}
+
+.humidity {
+    display: flex;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.humidity-img {
+    filter: grayscale(1) brightness(0) invert(0.75);
+    width: 38px; 
+    margin-right: 2.75vw;
+}
+
+footer {
+    display: flex;
+    font-size: 12pt;
+    text-align: center;
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%; /* Ajusta a largura */
+        padding: 20px;
+    }
+
+    input {
+        font-size: 14pt;
+        padding-left: 20px;
+    }
+}
