@@ -1,7 +1,7 @@
 const dateSys = new Date();
 const horaAtual = dateSys.getHours();
 const key = "dfda8cea62ea28831753e599cd702d8d"
-const defaultCity = "Cambuí";
+const defaultCity = "São Paulo";
 
 async function carregar() {
 
